@@ -1,0 +1,375 @@
+body {
+    background-color:#ce3635;
+    text-align: center;
+    color:#fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777;
+    margin: 0;
+    padding: 0;
+  }
+  
+  * { color:#fff; text-decoration: none;}
+
+#index_animate {
+    padding-top: 200px;
+}
+  
+  /* general */
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin-bottom: 20px;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    color: #52414c;
+  }
+  
+  h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #dddddd;
+  }
+  
+  h2,
+  h3 {
+    font-size: 22px;
+  }
+  
+  /* sidebar */
+  .sidebar {
+    float: right;
+    width: 100%;
+    max-width: 270px;
+    padding: 30px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  h3,
+  .sidebar h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eee;
+  }
+  .social {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-right: 5px;
+  }
+  .social:last-child {
+    margin-right: 0;
+  }
+  
+  
+  /* main */
+  #main-container {
+    padding-top: 130px;
+  }
+  .main-section {
+    color: black;
+    float: left;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    margin: 0 0 40px;
+    /* border: 1px solid #ddd; */
+  }
+  
+  /* portfolio page */
+  
+  .work {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    height: auto;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #52414c;
+    border-bottom: 0;
+  }
+  
+  .auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  
+  /* contact page */
+  #contact-form ul {
+    margin-bottom: 20px;
+  }
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+  }
+  textarea {
+    height: 200px;
+  }
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #6f2f2c;
+    border: 0 none;
+  }
+  
+  /*end contact page*/
+  
+  /*navbar*/
+  a.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 35px 15px;
+    font-size: 32px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 700;
+  }
+  
+  nav.main-navigation {
+    position: relative;
+  }
+  
+  nav.main-navigation ul.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    text-align: right;
+  }
+  
+  .nav-list li.nav-list-item {
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 30px;
+    margin-top: 35px;
+  }
+  
+  a.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: white;
+  }
+  
+  @keyframes FadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+  
+  
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        pointer-events: auto;
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  
+  .nav-list li {
+    animation: FadeIn 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation-fill-mode: both;
+  }
+  
+  .nav-list li:nth-child(1) {
+    animation-delay: .3s;
+  }
+  
+  .nav-list li:nth-child(2) {
+    animation-delay: .6s;
+  }
+  
+  .nav-list li:nth-child(3) {
+    animation-delay: .9s;
+  }
+  
+  .nav-list li:nth-child(4) {
+    animation-delay: 1.2s;
+  }
+  
+  .nav-list li:nth-child(5) {
+    animation-delay: 1.5s;
+  }
+  
+  /* Animation */
+  
+  @keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+  
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+  }
+  
+  @-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+  
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+  }
+  
+  .animatedFadeInUp {
+    opacity: 0
+  }
+  
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+  }
+  
+    
+  @media only screen and (max-width: 980px) {
+    nav {
+      float: right;
+      margin-top: 25px;
+      padding-right: 25px;
+  }
+  }
+  @media only screen and (max-width: 980px) {
+    nav {
+      float: right;
+      margin-top: 25px;
+      padding-right: 25px;
+  }
+  
+  }
+   
+   @media only screen and (max-width: 768px) {
+     #logo {
+       position: static;
+      }
+      #email {
+        position: static;
+       }
+      nav {
+        float: right;
+        margin-top: 25px;
+        padding-right: 25px;
+    }
+   }
+   
+   @media only screen and (max-width: 640px) {
+     #logo {
+       width: 100%;
+      }
+      #email {
+        position: static;
+       }
+      nav {
+        position: relative;
+        display: inline-block;
+        padding-right: 180px;
+      }
+  
+      #main-container{
+        padding-top: 180px;
+        margin-left: 5px;
+      }
+   }
+
+   /*responsive website*/
+   // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
